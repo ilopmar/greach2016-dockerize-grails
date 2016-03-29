@@ -120,3 +120,10 @@ grails:
 endpoints:
     jmx:
         unique-names: true
+
+rabbitmq:
+    connectionfactory:
+        username: guest
+        password: guest
+        hostname: localhost
+        port: 5672
