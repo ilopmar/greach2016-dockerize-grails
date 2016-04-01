@@ -130,3 +130,18 @@ rabbitmq:
         password: guest
         hostname: localhost
         port: 5672
+
+---
+environments:
+    production:
+        rabbitmq:
+            connectionfactory:
+                username: guest
+                password: guest
+                hostname: rabbitmq
+                port: 5672
+        dataSource:
+            dbCreate: create-drop
+            url: jdbc:postgresql://postgresql:5432/reverseapp
+            username: reverseapp
+            password: reverseapp

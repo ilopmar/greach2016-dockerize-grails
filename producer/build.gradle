@@ -71,3 +71,9 @@ assets {
     minifyJs = true
     minifyCss = true
 }
+
+task prepareDocker(type: Copy, dependsOn: build) {
+    from file('src/main/docker/Dockerfile')
+    from project.jar
+    into "${buildDir}/docker"
+}

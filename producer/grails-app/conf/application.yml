@@ -127,3 +127,13 @@ rabbitmq:
         password: guest
         hostname: localhost
         port: 5672
+
+---
+environments:
+    production:
+        rabbitmq:
+            connectionfactory:
+                username: guest
+                password: guest
+                hostname: rabbitmq
+                port: 5672
