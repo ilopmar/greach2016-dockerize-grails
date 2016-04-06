@@ -15,9 +15,9 @@ environments:
     development:
         dataSource:
             dbCreate: create-drop
-            url: jdbc:postgresql://localhost/grails_docker
-            username: grails_docker
-            password: grails_docker
+            url: jdbc:postgresql://localhost:5432/reverseapp
+            username: reverseapp
+            password: reverseapp
     test:
         dataSource:
             dbCreate: update
